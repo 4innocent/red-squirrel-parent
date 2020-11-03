@@ -1,0 +1,6 @@
+# red-squirrel-front/
+
+node_modules/
+**/.DS_Store/
+**/dist/
+*.local
