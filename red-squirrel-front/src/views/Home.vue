@@ -1,14 +1,16 @@
 <template>
-  <div class="home"></div>
+<top-bar></top-bar>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
+import {
+  Options,
+  Vue
+} from 'vue-class-component';
+import TopBar from '@/components/top-bar/top-bar.vue';
 @Options({
   components: {
-    HelloWorld,
+    'top-bar': TopBar,
   },
 })
 export default class Home extends Vue {}
