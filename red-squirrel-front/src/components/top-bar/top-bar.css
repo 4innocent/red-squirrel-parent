@@ -10,34 +10,41 @@
   border-bottom: 1px solid #eaecef;
   align-items: center;
   padding: 0.7rem 1.5rem;
+  z-index: 10;
+  justify-content: space-between;
 }
 .topBar-div--container .topBar-div--left {
   margin-right: 0.5rem;
 }
 .topBar-div--container .topBar-div--left .slideBtn-div--left {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
   cursor: pointer;
   display: none;
   width: 1.25rem;
   height: 1.25rem;
-  position: absolute;
+  box-sizing: unset;
   padding: 0.6rem;
-  top: 0.6rem;
-  left: 1rem;
 }
 .topBar-div--container .topBar-div--left .logo-img--left {
   width: 1.65rem;
   height: 1.65rem;
 }
 @media (max-width: 719px) {
-  .topBar-div--container .topBar-div--left .slideBtn-div--left {
-    display: block;
-  }
   .topBar-div--container .topBar-div--left .logo-img--left {
     margin-left: 1.85rem;
   }
 }
-@media (max-width: 719px) {
-  .topBar-div--container .topBar-div--right .can-hidden {
-    display: none;
-  }
+.topBar-div--container .topBar-div--right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+}
+.topBar-div--container .topBar-div--right .can-show {
+  display: none;
+}
+.topBar-div--container .topBar-div--right .login-btn--topBar {
+  border-radius: 1rem;
+  margin-left: 10px;
 }
