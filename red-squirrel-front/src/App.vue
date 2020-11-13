@@ -28,6 +28,9 @@ export default class App extends Vue {}
     .can-show {
       display: block;
     }
+    .can-show-flex {
+      display: flex;
+    }
   }
 }
 </style>
