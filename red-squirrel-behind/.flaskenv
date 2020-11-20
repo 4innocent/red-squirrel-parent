@@ -1,2 +1,2 @@
-FLASK_APP=flaskr
+FLASK_APP=home
 FLASK_ENV=development
