@@ -1,0 +1,99 @@
+.topBar-div--container{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 3.6rem;
+  border-bottom: 1px solid #eaecef;
+  align-items: center;
+  padding: .7rem 1.5rem;
+  z-index: 10;
+  justify-content: space-between;
+  .topBar-div--left{
+    display: flex;
+    margin-right: 0.5rem;
+    align-items: center;
+    .menuBtn-div--left{
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 3.6rem;
+      &:hover{
+        cursor: pointer;
+        background-color: #e4e6e8;
+      }
+      .menuBtn-span--left{
+        position: relative;
+        width: 18px;
+        height: 2px;
+        background-color: #848d95;
+        &:hover{
+          cursor: pointer;
+        }
+        &:before,&:after{
+          position: absolute;
+          content: '';
+          width: 18px;
+          height: 2px;
+          left: 0;
+          background-color: #848d95;
+          top: -5px;
+          transition: all ease-in-out .1s;
+        }
+        &:after{
+          top: 5px;
+        }
+      }
+      .menuBtn-sapn-change{
+        background-color: transparent;
+        &:before{
+          top: 0px;
+          transform: rotate(45deg);
+        }
+        &:after{
+          top: 0px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .menuContent-div--left{
+      position: absolute;
+      top: 3.6rem;
+    }
+    .fade-enter-active{
+      transition: all 0.5s ease;
+      transform: scale(1, 0);
+    }
+    .fade-enter-to{
+      transform: scale(1, 1);
+    }
+    .fade-leave-active{
+      transition: all 0.5s ease;
+      transform: scale(1, 1);
+    }
+    .fade-leave-to{
+      transform: scale(1, 0);
+    }
+    .logo-img--left{
+      width: 1.65rem;
+      height: 1.65rem;
+    }
+  }
+  .topBar-div--right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    .can-show{
+      display: none;
+    }
+    .login-btn--topBar{
+      border-radius: 1rem;
+      margin-left: 10px;
+    }
+  }
+}

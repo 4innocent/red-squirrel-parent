@@ -1,0 +1,100 @@
+.topBar-div--container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 3.6rem;
+  border-bottom: 1px solid #eaecef;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  z-index: 10;
+  justify-content: space-between;
+}
+.topBar-div--container .topBar-div--left {
+  display: flex;
+  margin-right: 0.5rem;
+  align-items: center;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 3.6rem;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left:hover {
+  cursor: pointer;
+  background-color: #e4e6e8;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-span--left {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  background-color: #848d95;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-span--left:hover {
+  cursor: pointer;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-span--left:before,
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-span--left:after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 2px;
+  left: 0;
+  background-color: #848d95;
+  top: -5px;
+  transition: all ease-in-out 0.1s;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-span--left:after {
+  top: 5px;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-sapn-change {
+  background-color: transparent;
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-sapn-change:before {
+  top: 0px;
+  transform: rotate(45deg);
+}
+.topBar-div--container .topBar-div--left .menuBtn-div--left .menuBtn-sapn-change:after {
+  top: 0px;
+  transform: rotate(-45deg);
+}
+.topBar-div--container .topBar-div--left .menuContent-div--left {
+  position: absolute;
+  top: 3.6rem;
+}
+.topBar-div--container .topBar-div--left .fade-enter-active {
+  transition: all 0.5s ease;
+  transform: scale(1, 0);
+}
+.topBar-div--container .topBar-div--left .fade-enter-to {
+  transform: scale(1, 1);
+}
+.topBar-div--container .topBar-div--left .fade-leave-active {
+  transition: all 0.5s ease;
+  transform: scale(1, 1);
+}
+.topBar-div--container .topBar-div--left .fade-leave-to {
+  transform: scale(1, 0);
+}
+.topBar-div--container .topBar-div--left .logo-img--left {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+.topBar-div--container .topBar-div--right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+}
+.topBar-div--container .topBar-div--right .can-show {
+  display: none;
+}
+.topBar-div--container .topBar-div--right .login-btn--topBar {
+  border-radius: 1rem;
+  margin-left: 10px;
+}
