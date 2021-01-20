@@ -13,7 +13,7 @@
           ref="verticalMenu"
         ></span>
       </div>
-      <img class="logo-img--left" src="@/assets/logo.png" />
+      <!-- <img class="logo-img--left" src="@/assets/logo.png" /> -->
       <transition name="fade">
         <a-menu
           theme="dark"
